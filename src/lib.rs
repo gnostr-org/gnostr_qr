@@ -41,3 +41,33 @@ pub fn render(data: &str) {
         .build();
     println!("{}", string); //prints blocks to terminal
 }
+
+pub fn add(left: usize, right: usize) -> usize {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
+
+    ///cargo test -- --show-output
+
+    #[test]
+    fn test_gnostr_tagline() {
+        let gnostr_tagline = "gnostr-qr:part of the git+nostr workflow utility";
+        render(&gnostr_tagline);
+        eprintln!("{:?}", sha256_string(&gnostr_tagline).unwrap());
+    }
+    #[test]
+    fn test_gnostr_github() {
+        let gnostr_github = "https://github.com/gnostr-org/gnostr.git";
+        render(&gnostr_github);
+        eprintln!("{:?}", sha256_string(&gnostr_github).unwrap());
+    }
+}
