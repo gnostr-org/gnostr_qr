@@ -2,9 +2,9 @@ use gnostr_qr::*;
 
 fn main() {
     use std::env;
-    let package_name = env!("CARGO_PKG_NAME");
-    let crate_name = env!("CARGO_CRATE_NAME");
-    let version = env!("CARGO_PKG_VERSION");
+    let _package_name = env!("CARGO_PKG_NAME");
+    let _crate_name = env!("CARGO_CRATE_NAME");
+    let _version = env!("CARGO_PKG_VERSION");
     let mut args: Vec<String> = env::args().collect();
     args.remove(0);
     if args.len() == 1 {
@@ -27,8 +27,6 @@ fn main() {
         }
         std::process::exit(0);
     } else {
-        let render_help = r"gnostr-qr <data>";
-        //render(&render_help);
         help();
     }
 }
