@@ -2,9 +2,9 @@
 name = "gnostr_qr"
 authors = ["gnostr admin@gnostr.org"]
 description = "gnostr_rs: part of the git+nostr workflow utility"
-homepage = "https://github.com/gnostr-org/gnostr_qr.git"
+homepage = "https://github.com/gnostr-org/gnostr_qr"
 repository = "https://github.com/gnostr-org/gnostr_qr.git"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 
 [package.metadata.wix]
