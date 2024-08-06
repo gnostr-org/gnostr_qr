@@ -2,7 +2,7 @@
 name = "gnostr_qr"
 authors = ["gnostr admin@gnostr.org"]
 description = "gnostr_rs: part of the git+nostr workflow utility"
-hmoepage = "https://github.com/gnostr-org/gnostr_qr.git"
+homepage = "https://github.com/gnostr-org/gnostr_qr.git"
 repository = "https://github.com/gnostr-org/gnostr_qr.git"
 version = "0.0.1"
 edition = "2021"

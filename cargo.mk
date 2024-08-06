@@ -48,7 +48,9 @@ cargo-t:cargo-test
 cargo-test:### 	cargo-test
 	@. $(HOME)/.cargo/env
 	#@cargo test
-	@cargo test -p jj-cli --test runner
+	@cargo test
+	@./target/debug/gnostr-qr  gnostr-qr:part of the git+nostr workflow utility > gnostr_tagline.txt
+	@./target/debug/gnostr-qr  https://github.com/gnostr-org/gnostr.git > gnostr_github.txt
 cargo-report:### 	cargo-report
 	@. $(HOME)/.cargo/env
 	cargo report future-incompatibilities --id 1
