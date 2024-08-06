@@ -1,5 +1,7 @@
 ## gnostr-qr: part of the git+nostr workflow utility suite
 
+[![Release](https://github.com/gnostr-org/gnostr_qr/actions/workflows/release.yml/badge.svg)](https://github.com/gnostr-org/gnostr_qr/actions/workflows/release.yml)
+
 <center>
 
 ![](./f59f422e754bb32724c17fc3e2d4b74aa13f200c38a3aa8b9e22763691bb2311.png)
