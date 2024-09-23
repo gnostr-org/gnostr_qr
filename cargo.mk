@@ -44,12 +44,17 @@ cargo-check:### 	cargo-check
 cargo-bench:### 	cargo-bench
 	@. $(HOME)/.cargo/env
 	@cargo bench
+cargo-d: cargo-docs
+cargo-doc: cargo-docs
+cargo-docs:
+	cargo doc --all-features --document-private-items $(OPEN)
 cargo-t:cargo-test
-cargo-test:### 	cargo-test
+cargo-test: cargo-b### 	cargo-test
 	@. $(HOME)/.cargo/env
 	#@cargo test
 	@cargo test
-	@./target/debug/gnostr-qr  gnostr-qr:part of the git+nostr workflow utility > gnostr_tagline.txt
+	@./target/debug/gnostr-qr   gnostr-qr:part of the git+nostr workflow utility > gnostr_tagline.txt
+	@./target/debug/gnostr-qr  "gnostr-qr:part of the git+nostr workflow utility" > gnostr_tagline2.txt
 	@./target/debug/gnostr-qr  https://github.com/gnostr-org/gnostr.git > gnostr_github.txt
 cargo-report:### 	cargo-report
 	@. $(HOME)/.cargo/env
