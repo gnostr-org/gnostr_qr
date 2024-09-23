@@ -1,10 +1,10 @@
 [package]
 name = "gnostr_qr"
 authors = ["gnostr admin@gnostr.org"]
-description = "gnostr_rs: part of the git+nostr workflow utility"
+description = "gnostr_qr: part of the git+nostr workflow utility"
 homepage = "https://github.com/gnostr-org/gnostr_qr"
 repository = "https://github.com/gnostr-org/gnostr_qr.git"
-version = "0.0.4"
+version = "0.0.5"
 edition = "2021"
 license = "MIT"
 
@@ -33,7 +33,7 @@ lto = "thin"
 # Config for 'cargo dist'
 [workspace.metadata.dist]
 # The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
-cargo-dist-version = "0.14.1"
+cargo-dist-version = "0.21.1"
 # CI backends to support
 ci = "github"
 # The installers to generate for each app
@@ -44,7 +44,9 @@ tap = "gnostr-org/homebrew-gnostr-org"
 targets = ["aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-unknown-linux-gnu", "x86_64-unknown-linux-musl", "x86_64-pc-windows-msvc"]
 # Publish jobs to run in CI
 publish-jobs = ["homebrew"]
-# Publish jobs to run in CI
+# Which actions to run on pull requests
 pr-run-mode = "plan"
 # Whether to install an updater program
 install-updater = true
+# Path that installers should place binaries in
+install-path = "CARGO_HOME"

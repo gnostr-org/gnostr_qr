@@ -69,7 +69,7 @@
 
         <Package Id='*'
             Keywords='Installer'
-            Description='gnostr_rs: part of the git+nostr workflow utility'
+            Description='gnostr_qr: part of the git+nostr workflow utility'
             Manufacturer='gnostr admin@gnostr.org'
             InstallerVersion='450'
             Languages='1033'
